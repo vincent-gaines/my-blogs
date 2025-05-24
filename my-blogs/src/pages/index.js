@@ -1,20 +1,21 @@
-import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Head from "next/head";
+import { Inter } from "next/font/google";
+import Link from "next/link";
 import utilStyles from '../styles/utils.module.css';
- 
+
+
+const inter = Inter({ subsets: ["latin"] });
+
 export default function Home() {
-  return (
-    <Layout home>
+    return (
+    <>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Home Page</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hi I am Vincent Gaines @Filioque</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-    </Layout>
-  );
+      <div className={utilStyles.headingMd}>
+        <p>Welcome to my Blog!</p>
+        <p><Link href="/posts/first-post">Check out my first post</Link></p>
+      </div>
+     </>
+    );
 }

@@ -1,21 +1,26 @@
 .container {
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
-  }
-  
-  .container {
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
-  }
-   
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-   
-  .backToHome {
-    margin: 3rem 0 0;
-  }
+  max-width: 80vw;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.profileWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileTextWrapper {
+  font-size: 1.25rem;
+}
+
+.profileImage {
+  border-radius: 50%;
+}
+
+.profileNameText {
+  font-size: 1.25rem;
+}
+
